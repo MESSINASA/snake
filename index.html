@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>贪吃蛇游戏</h1>
+            <div class="game-info">
+                <div class="score-container">
+                    分数：<span id="scoreText">0</span>
+                </div>
+                <div class="controls-info">
+                    使用方向键控制蛇的移动 ↑ ← ↓ →
+                </div>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        <div class="game-controls">
+            <button id="startButton">开始游戏</button>
+        </div>
+    </div>
+
+    <!-- 添加游戏结束模态框 -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>游戏结束</h2>
+            <p>你的得分是：<span id="finalScore">0</span></p>
+            <button id="restartButton">重新开始</button>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html> 
